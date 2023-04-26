@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #1e1e1e;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 10rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .dot {
+    width: 2rem;
+    height: 2rem;
+    background-color: #00ffca;
+    border-radius: 50%;
+    animation: dot 1.5s ease-in-out infinite;
+
+}
+.container .dot--2{
+    animation-delay: .2s;
+
+}
+.container .dot--3{
+    animation-delay: .4s ;
+}
+
+@keyframes dot {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    40% {
+        transform: scale(1);
+        opacity: 1;
+    }  
+    80%{
+        transform: scale(0);
+        opacity: 0;
+
+    }   
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    }   
+}
+
+
